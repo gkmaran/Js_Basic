@@ -1,0 +1,55 @@
+#links{
+    width: 100%;
+}    
+#links a{
+    text-decoration: none;
+    background-color:brown;
+    color: white;
+    font-weight: 900;
+    font-size: 2rem;
+    display: flex;
+    width: 30%;
+    justify-content: center;
+    padding: 2%;
+    position: relative;
+    top: 150px;
+    margin: 10px auto;
+    transition: transform 0.5s ease-out;
+}
+a{
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 4px;
+}
+a:hover{
+    transform: translateY(-4px);
+}
+.design{
+    background-color: brown;
+    height: auto;
+    width: 30%;
+    text-align: center;
+    position: relative;
+    top: 250px;
+    border-radius: 10px;
+    color: white;
+    margin: auto;
+}
+.design button{
+    background-color: blue;
+    color: white;
+    padding: 1%;
+    font-weight: bold;
+    border-radius: 4px;
+}
+@media (max-width:900px) {
+    #links a{
+        width: auto;
+    }
+    .design{
+        width: auto;
+    }
+}
