@@ -29,7 +29,7 @@ a:hover{
 }
 .design{
     background-color: brown;
-    height: auto;
+    min-height: 200px;
     width: 30%;
     text-align: center;
     position: relative;
@@ -37,6 +37,7 @@ a:hover{
     border-radius: 10px;
     color: white;
     margin: auto;
+    padding: 10px;
 }
 .design button{
     background-color: blue;
