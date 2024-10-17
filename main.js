@@ -1,3 +1,5 @@
+//GradeCalculation
+
 function calculateGrade(){
     var getElement=parseFloat(document.getElementById("input").value);
     var score=document.getElementById("result");
@@ -47,7 +49,13 @@ function age(){
     var input=document.getElementById("input").value;
     var age=document.getElementById("result");
     document.getElementById("input").value="";
-    if(input>=0 && input<=12){
+    if(isNaN(input) || input ==""){
+        age.innerHTML="Your Input Is Empty";
+    }
+    else if (input <= 0 || input > 110) {
+        age.innerHTML = "Your Input Is Invalid.";
+    }
+    else if(input>=1 && input<=12){
         age.innerHTML="You Are Child";
     }
     else if(input>=13 && input<=19){
